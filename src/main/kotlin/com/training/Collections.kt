@@ -2,12 +2,12 @@ package com.training
 
 fun listTraining() {
     // listOf provides read only list which means that now you cannot remove elements from the list
-    val readOnlyShapesList = listOf("triangle", "square", "circle")
+    val readOnlyShapesList: List<String> = listOf("triangle", "square", "circle")
     // readOnlyShapesList.remove() - not allowed
     println("readOnlyShapesList: $readOnlyShapesList")
 
     // mutableListOf provides mutable list which means that now you can remove elements from the list
-    val mutableShapesList = mutableListOf("triangle", "square", "circle")
+    val mutableShapesList: MutableList<String> = mutableListOf("triangle", "square", "circle")
     mutableShapesList.removeAt(0)
     println("mutableShapesList: $mutableShapesList")
 
@@ -19,7 +19,7 @@ fun listTraining() {
 
 fun setTraining() {
     // setOf provides read only set which means that now you cannot remove elements from the set
-    val readOnlyShapesSet = setOf("triangle", "square", "circle")
+    val readOnlyShapesSet: Set<String> = setOf("triangle", "square", "circle")
     // readOnlyShapesSet.remove() - not allowed
     println("readOnlyShapesSet: $readOnlyShapesSet")
 
@@ -36,7 +36,7 @@ fun setTraining() {
 
 fun mapTraining() {
     // mapOf provides read only map which means that now you cannot remove any key from the map
-    val readOnlyShapesMap = mapOf("triangle" to 1, "square" to 2, "circle" to 3)
+    val readOnlyShapesMap: Map<String, Int> = mapOf("triangle" to 1, "square" to 2, "circle" to 3)
     // readOnlyShapes["triangle"] = 4 - not allowed
     println("readOnlyShapesMap: $readOnlyShapesMap")
 

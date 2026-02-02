@@ -26,4 +26,14 @@ fun useOfRanges() {
 fun main(args: Array<String>) {
     useOfWhen()
     useOfRanges()
+    var a: String = "String"
+    a = null
+    A("1").foo()
+
+}
+
+class A constructor(private val a: String) {
+    fun foo() {
+        println(this.a)
+    }
 }
